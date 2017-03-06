@@ -11,6 +11,7 @@ func main() {
     var b int
     a = 5
     b = 6
+    /* Dynamic type declaration/ type inference */
     c := add(a, b)
     fmt.Println(c)
 }
