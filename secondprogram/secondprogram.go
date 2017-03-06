@@ -11,6 +11,6 @@ func main() {
     var b int
     a = 5
     b = 6
-    var c int = add(a, b)
+    c := add(a, b)
     fmt.Println(c)
 }
