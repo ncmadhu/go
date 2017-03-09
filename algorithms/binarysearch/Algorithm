@@ -1,0 +1,26 @@
+Procedure BinarySearch
+	1. A ---> Sorted Array
+	2. x ---> Value to be searched
+	3. n ---> Size of Array
+
+	set lowerBound = 0
+	set upperBound = n - 1
+
+	while x not found:
+		
+		if upperBound < lowerBound:
+			Exit: x does not exist
+		
+		set midPoint = lowerBound + (upperBound - lowerBound) / 2
+
+		if a[midPoint] > x:
+			set upperBound = midPoint - 1
+
+		if a[midPoint] < x:
+			set lowerBound = midPoint + 1
+
+		if a[midPoint] == x:
+			Exit: Found x at midPoint
+
+	end while
+end Procedure
