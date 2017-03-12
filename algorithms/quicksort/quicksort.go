@@ -41,7 +41,7 @@ func partition(a []int, pivot, left, right int) int {
 
 func main() {
 	
-	var a = [][]int {{4,2,8,1,5}, {89, 23, 12, 1, 2, 14, 56, 55, 55}}
+	var a = [][]int {{56,12,90,1,4,11,67,23,45,13,10}, {4,2,8,1,5}, {89, 23, 12, 1, 2, 14, 56, 55, 55}}
 
 	for _, x := range a {
 		QuickSort(x, 0, len(x) - 1)
