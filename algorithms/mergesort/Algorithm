@@ -1,0 +1,43 @@
+Procedure MergeSort
+
+	1. Unsorted array -----> a
+	2. Empty temp array of size a ----> temp
+	3. Array start ----> s
+	4. Array End ----> e
+
+	5. Check start > end if not continue
+
+	6. Divide array in two 
+		6.1 Find middle index ----> (start + end) / 2
+		6.2 Left array ---> start to middle
+		6.3 Right array ---> middle + 1 to end
+
+	7. Do MergeSort on left and right array
+		7.1 MergeSort(a, temp, start, middle)
+		7.2 MergeSort(a, temp, middle + 1, end)
+	
+	8. Sort and Merge two halves ( Left and Right array)
+		8.1 Find end of left half of array and start of right half of array. 
+			LeftEnd ---> (start + end) / 2 
+			RightStart ---> LeftEnd + 1
+		        Left ---> LeftStart
+			Right ---> RightStart	
+		8.2 set start index of temp array to start of Left array
+			index ---> Left
+		8.3 Compare left and right half and copy lesser value to temp array
+			8.3.1 If a[left] <= a[right]
+					temp[index] = a[left]
+					left++
+			      else:
+					temp[index] = a[right]
+					right++
+			8.3.2 index++
+			8.3.3 If left <= leftEnd or right <= rightEnd repeat from 8.3.1
+		8.4 Copy remaining elements in left half and right half to temp array with index as starting positon
+		8.5 Copy temp array to actual array
+	
+	9. Array should be sorted
+
+End Procedure 
+			
+		 
