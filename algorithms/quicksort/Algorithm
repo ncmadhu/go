@@ -1,0 +1,22 @@
+Procedure QuickSort
+	
+	1. Unsorted Array ---> a
+	2. Give start of array as left index ----> 0
+	3. Give end of array as right index ----> n -1
+
+	4. Check left < right if not return
+
+	5. Choose middle of array as pivot ----> a[(left + right)] / 2
+
+	6. Move items greater than pivot to right and items lesser than pivot to left
+		6.1 check a[left] > pivot. If greater stop else left++
+		6.2 check a[right] < pivot. If lesser stop else right--
+		6.3 swap a[left] and a[right] and do left++ right--
+		6.4 if left < right, repeat again from 6.1 else set index = left 
+		6.5 call Procedure QuickSort with a, left = 0, right = index - 1
+		6.6 call procedure QuickSort with a, left = index, right = right
+	
+	7. Array should be sorted after recursion ends
+
+End Procedure	
+
