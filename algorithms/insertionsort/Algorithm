@@ -1,0 +1,21 @@
+Procedure InsertionSort
+
+	1. Unsorted array ----> a
+	
+	2. If length of array is 1, array is sorted return
+	3. If length of array greater than 1, start from second element
+		3.1 set index = 1
+		3.2 If index < length of array
+			3.2.1 copy a[index] value to a variable v
+			3.2.2 set insertPosition = index
+			3.2.3 if insertPosition > 0 and a[insertPosition -1] > a[insertPosition]
+				3.2.3.1 a[insertPosition] = a[insertPosition - 1]
+				3.2.3.2 insertPosition--
+				3.2.3.3 Start again from step 3.2.3 
+			3.2.4 a[insertPosition] =  v
+			3.2.5 index++
+			3.2.6 Start again from step 3.2
+
+	4. Array is sorted
+
+End Procedure
